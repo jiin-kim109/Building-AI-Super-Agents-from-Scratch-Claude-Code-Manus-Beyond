@@ -6,6 +6,4 @@ __pycache__/
 node_modules/
 dist/
 
-# the agent's working directory is yours to fill
-workspace/*
-!workspace/.gitkeep
+workspace/

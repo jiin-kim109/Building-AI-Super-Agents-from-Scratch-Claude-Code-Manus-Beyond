@@ -11,6 +11,7 @@ from pydantic import BaseModel
 from tavily import AsyncTavilyClient
 
 CWD = Path(__file__).resolve().parent.parent / "workspace"
+CWD.mkdir(parents=True, exist_ok=True)
 
 _conversation = None
 

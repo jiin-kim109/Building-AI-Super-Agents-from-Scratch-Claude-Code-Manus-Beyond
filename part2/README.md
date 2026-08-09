@@ -11,7 +11,6 @@ backend/
   server.py        FastAPI and the websocket
 frontend/
   src/App.jsx      chat UI with the interrupt widget
-workspace/         the directory the agent works in
 ```
 
 ## Run it
@@ -39,8 +38,10 @@ Open http://127.0.0.1:5173. The dev server proxies `/ws` to the backend.
 
 ## Try it
 
-`workspace/` is where the agent lives. Drop a few files in there, then ask for
-something that needs all of it at once:
+Create a `workspace/` directory next to `backend/`. That is where the agent
+lives, and `CWD` in `backend/tools.py` points at it.
+
+Drop a few files in there, then ask for something that needs all of it at once:
 
 > Compare the numbers in my spreadsheets against the industry benchmark and
 > save a short report in my workspace.
