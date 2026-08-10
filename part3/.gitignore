@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+
+node_modules/
+dist/
+
+workspace/
+
+_demo/
+_capture.py
+_check.py
